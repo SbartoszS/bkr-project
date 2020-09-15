@@ -52,6 +52,11 @@
   background: #088f6e;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+
+  &:hover * .quote:after {
+    color: #FDE22B;
+    // background: linear-gradient(#FCCF13 0%, #FEE631 100%), #FFFFFF;
+  }
 }
 
 .opinion {
@@ -101,8 +106,6 @@
 .quote {
   position: relative;
   color: #ffffff;
-  // width: 98px;
-  // height: 77px;
 
   &:after {
     display: block;
@@ -116,6 +119,7 @@
     line-height: 77px;
     font-weight: bold;
     font-style: oblique;
+    transition: 0.3s linear;
 
   }
 }
