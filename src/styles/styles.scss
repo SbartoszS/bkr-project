@@ -1,0 +1,15 @@
+@import "variables";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+.btn {
+  width: 226px;
+  height: 50px;
+  background: linear-gradient(#FEE731, #FCCE12);
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}

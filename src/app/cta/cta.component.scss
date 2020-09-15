@@ -1,0 +1,25 @@
+.cta {
+  background-color: #eeeeee;
+}
+
+.cta-col {
+  padding: 2rem 0;
+  text-align: center;
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 0;
+
+    &--semibold {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.cta-row {
+  padding: 0 15px;
+  align-items: center;
+}

@@ -1,0 +1,103 @@
+.con-numb {
+  background-color: #F5F5F5;
+  border-radius: 25px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.11);
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.in-numbers {
+  margin-bottom: 5rem;
+
+  &__title {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+
+    &--bkr {
+      color: #FDE22B;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  color: #000000;
+
+  &__increment {
+    font-size: 48px;
+    font-weight: 300;
+
+    &--mln {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #888888;
+  }
+}
+
+.opinions {
+  background: #088f6e;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.opinion {
+  text-align: center;
+  padding: 5rem;
+
+  &__title {
+    color: #ffffff;
+    font-size: 35.99px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 3rem 0;
+    color: #ffffff;
+    font-size: 15.99px;
+    font-weight: 300;
+  }
+
+  &__recommend {
+    position: relative;
+    font-size: 13.99px;
+    font-weight: 300;
+    text-align: right;
+    color: #000000;
+
+    &:after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      height: 1px;
+      width: 60px;
+      background: #000000;
+    }
+
+  }
+}
+
+.photo {
+  background-image: url("src/assets/png/Tło.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  filter: contrast(142%);
+  border-bottom-left-radius: 25px;
+}
