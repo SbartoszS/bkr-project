@@ -21,7 +21,7 @@
 .owl-prev span,
 .owl-next span {
   display: block;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -32,4 +32,8 @@
   border-radius: 50%;
   background: #f3f3f3;
   outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  transform: rotate(180deg);
 }

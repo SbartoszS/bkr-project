@@ -18,7 +18,7 @@ export class TeamComponent implements OnInit {
       dots: false,
       loop: true,
       nav: true,
-      navText: ['<span>&#10229;</span>', '<span>&#10230;</span>'],
+      navText: ['<span>&#10140;</span>', '<span>&#10140;</span>'],
       responsive: {
         0: {
           items: 1,
