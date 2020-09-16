@@ -7,6 +7,7 @@ import { CtaComponent } from './cta/cta.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { TeamComponent } from './team/team.component';
 import { HowitworkComponent } from './howitwork/howitwork.component';
+import { WhybkrComponent } from './whybkr/whybkr.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HowitworkComponent } from './howitwork/howitwork.component';
     CtaComponent,
     NumbersComponent,
     TeamComponent,
-    HowitworkComponent
+    HowitworkComponent,
+    WhybkrComponent
   ],
   imports: [
     BrowserModule
