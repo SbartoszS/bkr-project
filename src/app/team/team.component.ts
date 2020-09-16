@@ -22,12 +22,11 @@ export class TeamComponent implements OnInit {
       responsive: {
         0: {
           items: 1,
-          autoplay: false,
         },
         768: {
           items: 2,
         },
-        1100: {
+        1024: {
           items: 3,
         },
       },
