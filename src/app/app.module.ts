@@ -8,6 +8,7 @@ import { NumbersComponent } from './numbers/numbers.component';
 import { TeamComponent } from './team/team.component';
 import { HowitworkComponent } from './howitwork/howitwork.component';
 import { WhybkrComponent } from './whybkr/whybkr.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WhybkrComponent } from './whybkr/whybkr.component';
     NumbersComponent,
     TeamComponent,
     HowitworkComponent,
-    WhybkrComponent
+    WhybkrComponent,
+    AdvantagesComponent
   ],
   imports: [
     BrowserModule

@@ -30,7 +30,7 @@
     font-weight: 600;
     color: #000000;
 
-    &:before {
+    &::before {
       display: block;
       position: absolute;
       content: "";
