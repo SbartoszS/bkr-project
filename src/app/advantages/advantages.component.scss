@@ -40,35 +40,4 @@
     color: #707070;
     transition: 0.3s ease;
   }
-
-  &__btn {
-    position: absolute;
-    bottom: 33px;
-    right: 15px;
-    font-weight: 400;
-    font-size: 10px;
-    color: #05932D;
-  }
-}
-
-#collapseExample.collapse:not(.show) {
-  display: block;
-  height: 5.5rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  transition: 0.3s ease;
-}
-
-#collapseExample.collapsing {
-  height: 5.5rem;
-}
-
-a.collapsed::after {
-  content: 'więcej';
-}
-
-a:not(.collapsed)::after {
-  content: 'mniej';
 }
