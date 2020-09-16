@@ -16,6 +16,24 @@ body {
   text-transform: uppercase;
 }
 
+.btn-more {
+  font-weight: 400;
+  font-size: 10px;
+  color: #05932D;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+
+  &:hover {
+    color: #0c6f28;
+  }
+}
+
+.morecontent span {
+  display: none;
+}
+
+
 
 @include media-breakpoint-up(md) {
   .owl-prev {
