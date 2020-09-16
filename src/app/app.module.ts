@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CtaComponent } from './cta/cta.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { TeamComponent } from './team/team.component';
+import { HowitworkComponent } from './howitwork/howitwork.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TeamComponent } from './team/team.component';
     FooterComponent,
     CtaComponent,
     NumbersComponent,
-    TeamComponent
+    TeamComponent,
+    HowitworkComponent
   ],
   imports: [
     BrowserModule

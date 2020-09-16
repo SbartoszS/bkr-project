@@ -1,0 +1,124 @@
+.how {
+  background-color: #f5f5f5;
+}
+
+.description {
+  background: transparent;
+  position: relative;
+
+  &--pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.info {
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+  }
+
+  &__subtitle {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      bottom: -14px;
+      left: 0;
+      width: 65px;
+      height: 1px;
+      background-color: #fcd014;
+    }
+  }
+
+  &__text {
+    padding-top: 1rem;
+    font-weight: normal;
+    font-size: 12px;
+    color: #707070;
+  }
+}
+
+.card {
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-body {
+  padding: 1.25rem 0;
+  // min-height: 150px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  height: 30px;
+}
+
+.card-text {
+  font-size: 12px;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+.img-box {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 10px solid #FFFFFF;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.06);
+  width: 110px;
+  height: 110px;
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 45%;
+    height: auto;
+  }
+
+  &__number {
+    display: inline-block;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    border-radius: 50%;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #088f6e;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(8, 143, 110, 0.55);
+  }
+}
+
+.row-pos {
+  position: relative;
+  top: -55px;
+}
