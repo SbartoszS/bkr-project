@@ -1,4 +1,6 @@
 @import "variables";
+@import "carousel";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,4 +14,25 @@ body {
   color: #000000;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+
+@include media-breakpoint-up(md) {
+  .owl-prev {
+    left: -30px;
+  }
+
+  .owl-next {
+    right: -30px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .owl-prev {
+    left: -50px;
+  }
+
+  .owl-next {
+    right: -50px;
+  }
 }

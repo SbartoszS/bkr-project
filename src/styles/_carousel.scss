@@ -1,0 +1,39 @@
+.owl-stage {
+  height: 450px;
+}
+
+.owl-prev {
+  left: -10px;
+}
+
+.owl-next {
+  right: -10px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 35%;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+}
+
+.owl-prev span,
+.owl-next span {
+  display: block;
+  font-size: 15px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  transform: rotate(180deg);
+}
