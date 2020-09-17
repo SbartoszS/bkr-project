@@ -37,3 +37,23 @@
 .owl-carousel .owl-nav button.owl-prev span {
   transform: rotate(180deg);
 }
+
+@media (min-width: 768px) {
+  .owl-prev {
+    left: -38px;
+  }
+
+  .owl-next {
+    right: -38px;
+  }
+}
+
+@media (min-width: 992px) {
+  .owl-prev {
+    left: -50px;
+  }
+
+  .owl-next {
+    right: -50px;
+  }
+}

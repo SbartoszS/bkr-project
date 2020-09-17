@@ -1,11 +1,20 @@
-@import "variables";
 @import "carousel";
-@import "components-class";
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
 }
 
 .btn {
@@ -17,6 +26,11 @@ body {
   text-transform: uppercase;
   outline: none;
   border: none;
+
+  &:hover {
+    color: #ffffff;
+    transform: scale(0.9);
+  }
 }
 
 .btn-more {
@@ -26,6 +40,7 @@ body {
   cursor: pointer;
   outline: none;
   text-decoration: none;
+  transition: 0.3s linear;
 
   &:hover {
     color: #0c6f28;
@@ -36,40 +51,32 @@ body {
   display: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+// @include media-breakpoint-up(md) {
+//   .owl-prev {
+//     left: -38px;
+//   }
 
-li {
-  text-decoration: none;
-}
+//   .owl-next {
+//     right: -38px;
+//   }
+// }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+// @include media-breakpoint-up(lg) {
+//   .owl-prev {
+//     left: -50px;
+//   }
 
-.custom-toggler.navbar-toggler {
-  border-color: rgb(255, 255, 255);
-}
+//   .owl-next {
+//     right: -50px;
+//   }
+// }
 
-@include media-breakpoint-up(md) {
-  .owl-prev {
-    left: -38px;
-  }
+// ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+// }
 
-  .owl-next {
-    right: -38px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .owl-prev {
-    left: -50px;
-  }
-
-  .owl-next {
-    right: -50px;
-  }
-}
+// li {
+//   text-decoration: none;
+// }
