@@ -9,6 +9,7 @@ import { TeamComponent } from './team/team.component';
 import { HowitworkComponent } from './howitwork/howitwork.component';
 import { WhybkrComponent } from './whybkr/whybkr.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
     TeamComponent,
     HowitworkComponent,
     WhybkrComponent,
-    AdvantagesComponent
+    AdvantagesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
