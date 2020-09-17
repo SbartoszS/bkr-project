@@ -5,6 +5,7 @@
     font-size: 36px;
     font-weight: 600;
     color: #000000;
+    word-break: normal;
 
     &--bkr {
       color: #fdd51a;
@@ -21,23 +22,14 @@
 }
 
 .photo {
-  position: relative;
-  // left: -110px;
-  left: 0;
-  top: 0;
+  height: 500px;
   width: 100%;
-  height: 400px;
-  // height: auto;
-  background-image: url("src/assets/png/family.png");
+  background-image: url("src/assets/img/whybkkr/family.png");
   background-repeat: no-repeat;
   background-size: center;
-  // background-position: center;
+  background-position: 50% 50%;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  // border-top-left-radius: 25px;
-  // border-bottom-left-radius: 25px;
-  // border-radius: 25px;
-  // background: red;
 }
 
 .card-horizontal {
@@ -54,7 +46,7 @@
   margin-top: 1rem;
 
   &__img {
-    width: 90%;
+    width: 70%;
     padding-left: 0.8rem;
   }
 }
@@ -95,4 +87,10 @@
   font-weight: 300;
   color: #888888;
   line-height: 18px;
+}
+
+@media (min-width: 992px) {
+  .max-width {
+    max-width: 720px;
+  }
 }
