@@ -16,12 +16,18 @@
   top: 35%;
   border-radius: 50%;
   background-color: #f3f3f3;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #088f6e !important;
+  }
 }
 
 .owl-prev span,
 .owl-next span {
   display: block;
   font-size: 15px;
+
 }
 
 .owl-carousel .owl-nav button.owl-next,

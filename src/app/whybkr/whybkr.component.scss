@@ -30,6 +30,7 @@
   background-position: 50% 50%;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  filter: contrast(142%);
 }
 
 .card-horizontal {
@@ -46,7 +47,7 @@
   margin-top: 1rem;
 
   &__img {
-    width: 70%;
+    width: 80%;
     padding-left: 0.8rem;
   }
 }
