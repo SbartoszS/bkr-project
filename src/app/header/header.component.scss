@@ -159,12 +159,17 @@
   text-align: center;
   transform: rotate(-20deg);
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.11);
+  z-index: 888;
+  overflow: hidden;
 
   &__title {
+    position: relative;
     color: #2c277b;
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
+    z-index: 5;
+    overflow: hidden;
   }
 
   &__text {
@@ -174,7 +179,22 @@
     transform: translate(-50%, -50%);
     font-size: 14px;
     font-weight: 400;
+    z-index: 5;
   }
+
+  &__ellipse {
+    position: absolute;
+    bottom: -85px;
+    right: -40px;
+    transform: rotate(242deg);
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.11);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    z-index: 4;
+  }
+
 }
 
 @media (min-width: 992px) {
