@@ -1,49 +1,16 @@
 <header class="header">
-  <div class="img-container">
-    <div class="container position1">
-      <div class="row justify-content-center">
-        <div class="col-11 col-sm-10 col-md-8 col-lg-4">
-          <section class="credit">
-            <h2 class="credit__subtitle">Kredyt hipotetyczny</h2>
-            <h1 class="credit__title">Dobry start w przyszłość</h1>
-            <ul class="credit-list mt-4">
-              <li class="credit-list__item">
-                <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />„0%” prowizji lub
-                <span class="credit-list__white"> „obniżona marża”</span>
-              </li>
-              <li class="credit-list__item">
-                <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />
-                <span class="credit-list__white">bezpłatna</span>
-                pomoc doradcy
-              </li>
-              <li class="credit-list__item">
-                <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />elastyczne formy<span
-                  class="credit-list__white">współpracy</span>
-              </li>
-              <li class="credit-list__item">
-                <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" /><span
-                  class="credit-list__white">kredytowanie</span>
-                do 90%
-              </li>
-              <li class="credit-list__item">wartości nieruchomości</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="img-container"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <nav class="navbar navbar-expand-lg bg-transparent">
           <a class="navbar-brand pr-lg-5" href="#"><img class="navbar__logo" src="/assets/img/header/logo.png"
               alt="Logo" /></a>
-          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mobile-menu" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="mobileMenu">
             <ul class="navbar-nav mr-auto text-center">
               <li class="nav-item pt-3 pb-3 p-lg-0 pr-lg-3">
                 <a class="nav-link nav-link--effect" href="#">Dlaczego BKR?</a>
@@ -71,61 +38,157 @@
       </div>
     </div>
   </div>
-</header>
-<div class="container mb-3 mt-3">
-  <div class="row">
-    <div class="col-12 col-lg-4">
-      <form class="form" action="">
-        <div class="container p-0">
-          <div class="row">
-            <div class="col-12">
-              <h4 class="form__title">Ile potrzebujesz?</h4>
-              <div class="form-group row mb-0">
-                <label for="amount" class="col-6 col-form-label">Kwota</label>
-                <div class="col-6">
-                  <input type="number" class="form-control form-control--black" id="amount" placeholder="300 000 zł" />
+
+  <div class="container">
+    <div class="row justify-content-center justify-content-lg-between">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+        <section class="credit">
+          <h2 class="credit__subtitle">Kredyt hipotetyczny</h2>
+          <h1 class="credit__title">Dobry start w przyszłość</h1>
+          <ul class="credit-list mt-4">
+            <li class="credit-list__item">
+              <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />„0%” prowizji lub
+              <span class="credit-list__white"> „obniżona marża”</span>
+            </li>
+            <li class="credit-list__item">
+              <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />
+              <span class="credit-list__white">bezpłatna</span>
+              pomoc doradcy
+            </li>
+            <li class="credit-list__item">
+              <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" />elastyczne formy<span
+                class="credit-list__white">współpracy</span>
+            </li>
+            <li class="credit-list__item">
+              <img class="credit-list__img" src="/assets/img/header/fine.png" alt="Marked" /><span
+                class="credit-list__white">kredytowanie</span>
+              do 90%
+            </li>
+            <li class="credit-list__item">wartości nieruchomości</li>
+          </ul>
+
+          <div class="adviser">
+            <p class="adviser__text"><span class="adviser__title">Doradca</span> w pakiecie </p>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+        <form class="form form--border" action="">
+          <div class="container p-0">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="form__title">Ile potrzebujesz?</h4>
+                <div class="form-group row mb-0">
+                  <label for="amount" class="col-6 col-form-label">Kwota</label>
+                  <div class="col-6">
+                    <input type="number" class="form-control form-control--black" id="amount"
+                      placeholder="300 000 zł" />
+                  </div>
+                  <div class="col-12">
+                    <input type="range" class="slider" id="amountRange" min="1" max="1000000" value="650000" />
+                  </div>
                 </div>
-                <div class="col-12">
-                  <input type="range" class="slider" id="amountRange" min="1" max="1000000" value="650000" />
+                <div class="form-group row mb-0">
+                  <label for="repayment" class="col-6 col-form-label">Okres spłaty</label>
+                  <div class="col-6">
+                    <input type="number" class="form-control form-control--black" id="repayment" placeholder="35 lat" />
+                  </div>
+                  <div class="col-12">
+                    <input type="range" class="slider" id="amountRepayment" min="1" max="100" value="100" />
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row mb-0">
-                <label for="repayment" class="col-6 col-form-label">Okres spłaty</label>
-                <div class="col-6">
-                  <input type="number" class="form-control form-control--black" id="repayment" placeholder="35 lat" />
+                <div class="form-group p-0">
+                  <input type="text" class="form-control" placeholder="Imię*" />
+                  <input type="tel" class="form-control" placeholder="Telefon*" />
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Adres e-mail" />
                 </div>
-                <div class="col-12">
-                  <input type="range" class="slider" id="amountRepayment" min="1" max="100" value="100" />
+                <div class="form-group p-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                    <label class="form-check-label" for="gridCheck">
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych,
+                      które pozostawiam w powyższym formularzu celem kontaktu od
+                      pośrednika Biura Kredytowe BKR. Potwierdzam zapoznanie się
+                      z klauzulą informacyjną i rozumiem, że wyrażoną zgodę mogę
+                      cofnąć pisząc na adres emila biuro@bkrkredyt.pl, a tym
+                      samym mojej dane dane zostaną usunięte.
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Imię*" />
-                <input type="tel" class="form-control" placeholder="Telefon*" />
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Adres e-mail" />
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck" />
-                  <label class="form-check-label" for="gridCheck">
-                    Wyrażam zgodę na przetwarzanie moich danych osobowych,
-                    które pozostawiam w powyższym formularzu celem kontaktu od
-                    pośrednika Biura Kredytowe BKR. Potwierdzam zapoznanie się
-                    z klauzulą informacyjną i rozumiem, że wyrażoną zgodę mogę
-                    cofnąć pisząc na adres emila biuro@bkrkredyt.pl, a tym
-                    samym mojej dane dane zostaną usunięte.
-                  </label>
+                <div class="form-group p-0 text-center">
+                  <button type="submit" class="btn btn__form">
+                    Chcę pożyczkę
+                  </button>
                 </div>
+                <h5 class="form__end form__end--border">Nasz doradca oddzwoni do Ciebie</h5>
               </div>
-              <div class="form-group text-center">
-                <button type="submit" class="btn btn__form">
-                  Chcę pożyczkę
-                </button>
-              </div>
-              <h5 class="form__end form__end--border">Nasz doradca oddzwoni do Ciebie</h5>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+
+
+</header>
+<!-- <aside class="form-buy">
+  <div class="container mb-3 mt-3 position2">
+    <div class="row justify-content-center justify-content-lg-end">
+      <div class="col-12 col-sm-8 col-md-7 col-lg-5">
+        <form class="form" action="">
+          <div class="container p-0">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="form__title">Ile potrzebujesz?</h4>
+                <div class="form-group row mb-0">
+                  <label for="amount" class="col-6 col-form-label">Kwota</label>
+                  <div class="col-6">
+                    <input type="number" class="form-control form-control--black" id="amount"
+                      placeholder="300 000 zł" />
+                  </div>
+                  <div class="col-12">
+                    <input type="range" class="slider" id="amountRange" min="1" max="1000000" value="650000" />
+                  </div>
+                </div>
+                <div class="form-group row mb-0">
+                  <label for="repayment" class="col-6 col-form-label">Okres spłaty</label>
+                  <div class="col-6">
+                    <input type="number" class="form-control form-control--black" id="repayment" placeholder="35 lat" />
+                  </div>
+                  <div class="col-12">
+                    <input type="range" class="slider" id="amountRepayment" min="1" max="100" value="100" />
+                  </div>
+                </div>
+                <div class="form-group p-0">
+                  <input type="text" class="form-control" placeholder="Imię*" />
+                  <input type="tel" class="form-control" placeholder="Telefon*" />
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Adres e-mail" />
+                </div>
+                <div class="form-group p-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                    <label class="form-check-label" for="gridCheck">
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych,
+                      które pozostawiam w powyższym formularzu celem kontaktu od
+                      pośrednika Biura Kredytowe BKR. Potwierdzam zapoznanie się
+                      z klauzulą informacyjną i rozumiem, że wyrażoną zgodę mogę
+                      cofnąć pisząc na adres emila biuro@bkrkredyt.pl, a tym
+                      samym mojej dane dane zostaną usunięte.
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group p-0 text-center">
+                  <button type="submit" class="btn btn__form">
+                    Chcę pożyczkę
+                  </button>
+                </div>
+                <h5 class="form__end form__end--border">Nasz doradca oddzwoni do Ciebie</h5>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</aside> -->
