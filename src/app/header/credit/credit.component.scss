@@ -1,0 +1,52 @@
+.credit {
+ 
+  &__title {
+    position: relative;
+    color: #fee42e;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    max-width: 13ch;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      bottom: -14px;
+      left: 0;
+      width: 95px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+}
+
+.credit-list {
+  color: #ffffff;
+  font-size: 12px;
+  list-style-type: none;
+  padding-left: 0;
+
+  &__item {
+    line-height: 30px;
+
+    &:nth-last-child(1) {
+      margin-left: 20px;
+    }
+  }
+
+  &__img {
+    margin-right: 0.5rem;
+  }
+
+  &__white {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,146 @@
+@import "custom-variables";
+
+.form {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 0rem 1rem;
+  box-shadow: $box-shadow-main;
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  &__end {
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-black;
+
+  &::placeholder {
+    color: $color-gray;
+  }
+
+  &--black {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: $color-black;
+    text-align: center;
+  }
+
+  &::placeholder {
+    color: $color-black;
+  }
+}
+
+.form-group {
+  padding: 1rem 0;
+}
+
+.col-form-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-black;
+}
+
+.custom-control-input {
+  border-radius: 0;
+  background-color: $color-black;
+}
+
+.custom-control-label {
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 300;
+  color: $color-black;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: $color-green;
+  color: $color-green;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: $color-green;
+  background: url('/assets/img/slider.png');
+  cursor: pointer;
+
+}
+
+input[type=range]::-moz-range-thumb {
+
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: url('/assets/img/slider.png');
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: url('/assets/img/slider.png');
+  cursor: pointer;
+}
+
+input:focus { 
+  outline: none ;
+  border-color: $color-green;
+  box-shadow: 0 0 10px $color-green;
+}
+
+.custom-control-label:before{
+  background-color:red;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:$color-green;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='white' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+.custom-control-input:active~.custom-control-label::before{
+  background-color: $color-green;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $color-green; 
+}
+
+
+@media (min-width: 768px) {
+  .credit {
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-group {
+    padding: 0;
+  }
+}

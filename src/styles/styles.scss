@@ -1,3 +1,4 @@
+@import "custom-variables";
 @import "carousel";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
@@ -6,6 +7,17 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
+}
+
+.border-green-bot::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 5px solid $color-green;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
 
@@ -50,33 +62,3 @@ body {
 .morecontent span {
   display: none;
 }
-
-// @include media-breakpoint-up(md) {
-//   .owl-prev {
-//     left: -38px;
-//   }
-
-//   .owl-next {
-//     right: -38px;
-//   }
-// }
-
-// @include media-breakpoint-up(lg) {
-//   .owl-prev {
-//     left: -50px;
-//   }
-
-//   .owl-next {
-//     right: -50px;
-//   }
-// }
-
-// ul {
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// li {
-//   text-decoration: none;
-// }

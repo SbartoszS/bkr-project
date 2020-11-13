@@ -10,6 +10,9 @@ import { HowitworkComponent } from './howitwork/howitwork.component';
 import { WhybkrComponent } from './whybkr/whybkr.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
+import { CreditComponent } from './header/credit/credit.component';
+import { FormComponent } from './header/form/form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HeaderComponent } from './header/header.component';
     HowitworkComponent,
     WhybkrComponent,
     AdvantagesComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent,
+    CreditComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule

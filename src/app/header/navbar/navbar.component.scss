@@ -1,0 +1,79 @@
+@import "custom-variables";
+
+.navbar{
+  padding: 0.5rem 0rem;
+}
+
+.navbar-icon {
+    margin-right: 10px; 
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+  
+.navbar-collapse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 99999;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+button[aria-expanded="true"] > span.close {
+  display: inline;
+  color: rgba(255,255,255, 0.5);
+  background-color: transparent;
+}
+
+button[aria-expanded="true"] > span.navbar-toggler-icon {
+  display: none;
+}
+
+button[aria-expanded="false"] > span.close {
+  display: none;
+}
+
+.nav-link {
+    font-size: 12px;
+    font-weight: 300;
+    color: $color-main;
+    border: none;
+    transition: 0.3s ease;
+  
+    &--effect:hover {
+      color: $color-hover;
+    }
+  
+    &--phone {
+      font-weight: 400;
+      font-size: 18px;
+      color: $color-main;
+    }
+  
+    &--gray {
+      color: $color-gray;
+    }
+}
+  
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      margin-top: 0;
+      background-color: transparent;
+      position: initial;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: initial;
+    }
+  
+    .custom-list {
+      display: inline;
+    }
+  }
+  
