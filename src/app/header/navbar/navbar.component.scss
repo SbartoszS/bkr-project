@@ -42,18 +42,18 @@ button[aria-expanded="false"] > span.close {
 .nav-link {
     font-size: 12px;
     font-weight: 300;
-    color: $color-main;
+    color: $color-white;
     border: none;
     transition: 0.3s ease;
   
     &--effect:hover {
-      color: $color-hover;
+      color: $color-yellow;
     }
   
     &--phone {
       font-weight: 400;
       font-size: 18px;
-      color: $color-main;
+      color: $color-white;
     }
   
     &--gray {

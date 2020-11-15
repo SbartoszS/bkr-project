@@ -116,7 +116,7 @@ input:focus {
 }
 
 .custom-control-label:before{
-  background-color:red;
+  background-color: $color-white;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
   background-color:$color-green;

@@ -1,35 +1,24 @@
+@import "custom-variables";
 .credit {
- 
   &__title {
     position: relative;
-    color: #fee42e;
+    color: $color-yellow;
     font-weight: 600;
     font-size: 36px;
     margin-top: 1rem;
     text-transform: uppercase;
     max-width: 13ch;
-
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-      bottom: -14px;
-      left: 0;
-      width: 95px;
-      height: 2px;
-      background-color: #ffffff;
-    }
   }
 
   &__subtitle {
     font-size: 18px;
     font-weight: 300;
-    color: #ffffff;
+    color: $color-white;
   }
 }
 
 .credit-list {
-  color: #ffffff;
+  color: $color-white;
   font-size: 12px;
   list-style-type: none;
   padding-left: 0;
