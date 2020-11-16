@@ -1,6 +1,7 @@
 # BkrProject
 
 Bkr-project is a single page written in Angular. A mock-up of the project was used to create the website.
+* Checkout [Live Demo](https://sbartoszs.github.io/bkr-project/) 
 
 ## Mockup project
 
