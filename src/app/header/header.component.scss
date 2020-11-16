@@ -3,7 +3,7 @@
   overflow: hidden;
   width: 100vw;
   height: 100%;
-  background-image: url('../../assets/img/header/header_img_small.jpg');
+  background-image: url('src/assets/img/header_img_small.jpg');
   background-repeat: no-repeat;
   background-position: 36% -4%;
 }
@@ -23,7 +23,7 @@
 @media (min-width: 992px) {
 
   .header {
-    background-image: url('../../assets/img/header/header_img.jpg');
+    background-image: url('src/assets/img/header_img.jpg');
     background-position: 35% 0%;
    }
   }

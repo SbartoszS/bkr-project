@@ -87,7 +87,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 20px;
   border-radius: 50%;
   background: $color-green;
-  background: url('/assets/img/slider.png');
+  background: url('src/assets/img/slider.png');
   cursor: pointer;
 
 }
@@ -97,7 +97,7 @@ input[type=range]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: url('/assets/img/slider.png');
+  background: url('src/assets/img/slider.png');
   cursor: pointer;
 }
 
@@ -105,7 +105,7 @@ input[type=range]::-ms-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: url('/assets/img/slider.png');
+  background: url('src/assets/img/slider.png');
   cursor: pointer;
 }
 
